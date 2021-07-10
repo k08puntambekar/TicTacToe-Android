@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/something_regular"
+        android:padding="5dp"
+        android:text="minimal tictactoe"
+        android:textColor="#FE5677"
+        android:textSize="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player1_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Player 1 : 0"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/player2_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player1_textView"
+            android:layout_marginLeft="20dp"
+            android:text="Player 2 : 0"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_design"
+            android:padding="10dp"
+            android:text="RESET"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:backgroundTint="@null" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/column1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/column2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/column3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>
